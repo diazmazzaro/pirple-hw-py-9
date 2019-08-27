@@ -10,4 +10,4 @@ from Vehicle import Vehicle
 
 generictVehicle = Vehicle('Ford', 'A')
 
-print(generictVehicle.make)
+print(generictVehicle.getMake())

@@ -17,40 +17,40 @@ class Vehicle:
 
   #setters
   # Set model attribute
-  def setModel(model):
+  def setModel(self, model):
     self.model = model
   # Set make attribute
-  def setMake(make):
+  def setMake(self, make):
     self.make = make
   # Set year attribute
-  def setYear(year):
+  def setYear(self, year):
     self.year = year
   # Set weight attribute
-  def setWeight(weight):
+  def setWeight(self, weight):
     self.weight = weight
   # Set weight attribute
-  def setNeedsMaintenance(needsMaintenance):
+  def setNeedsMaintenance(self, needsMaintenance):
     self.needsMaintenance = needsMaintenance
   # Set weight attribute
-  def setTripsSinceMaintenance(tripsSinceMaintenance):
+  def setTripsSinceMaintenance(self, tripsSinceMaintenance):
     self.tripsSinceMaintenance = tripsSinceMaintenance
 
   # getters
   # Get model attribute
-  def getModel():
+  def getModel(self):
     return self.model
   # Get make attribute
-  def getMake():
+  def getMake(self):
     return self.make
   # Get year attribute
-  def getYear():
+  def getYear(self):
     return self.year
   # Get weight attribute
-  def getWeight():
+  def getWeight(self):
     return self.weight
   # Set weight attribute
-  def getNeedsMaintenance():
+  def getNeedsMaintenance(self):
     return self.needsMaintenance
   # Set weight attribute
-  def getTripsSinceMaintenance():
+  def getTripsSinceMaintenance(self):
     return self.tripsSinceMaintenance
