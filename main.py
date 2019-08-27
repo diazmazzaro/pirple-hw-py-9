@@ -7,7 +7,10 @@
 #
 
 from Vehicle import Vehicle
+from Car import Car
 
 generictVehicle = Vehicle('Ford', 'A')
+generictCar = Vehicle('Ford', 'b')
 
 print(generictVehicle.getMake())
+print(generictCar.getMake())
