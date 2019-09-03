@@ -28,12 +28,14 @@ class Vehicle:
   # Set weight attribute
   def setWeight(self, weight):
     self.weight = weight
-  # Set weight attribute
+  # Set needsMaintenance attribute
   def setNeedsMaintenance(self, needsMaintenance):
     self.needsMaintenance = needsMaintenance
-  # Set weight attribute
+  # Set tripsSinceMaintenance attribute
   def setTripsSinceMaintenance(self, tripsSinceMaintenance):
     self.tripsSinceMaintenance = tripsSinceMaintenance
+    if self.tripsSinceMaintenance > 100:
+      self.needsMaintenance = True
 
   # getters
   # Get model attribute
@@ -54,3 +56,8 @@ class Vehicle:
   # Set weight attribute
   def getTripsSinceMaintenance(self):
     return self.tripsSinceMaintenance
+
+  # Removes needsMaintenance flag and resets trip counter
+  def Repair(self):
+    self.needsMaintenance = False
+    self.tripsSinceMaintenance = 0

@@ -9,8 +9,14 @@
 from Vehicle import Vehicle
 from Car import Car
 
-generictVehicle = Vehicle('Ford', 'A')
-generictCar = Vehicle('Ford', 'b')
+fordFiesta = Car("Ford", "Fiesta", 2000, 1010)
+hondaCivic = Car("Honda", "Civic", 2019, 1981)
+toyotaCelica = Car("Toyota", "Celica", 1997, 989)
 
-print(generictVehicle.getMake())
-print(generictCar.getMake())
+def ShowCars():
+  fordFiesta.ShowInfo()
+  hondaCivic.ShowInfo()
+  toyotaCelica.ShowInfo()
+
+
+ShowCars()
